@@ -4,7 +4,6 @@ import br.com.alura.screenmatch.calcs.RecommendationFilter;
 import br.com.alura.screenmatch.models.Episode;
 import br.com.alura.screenmatch.models.Movie;
 import br.com.alura.screenmatch.models.Series;
-
 import java.util.ArrayList;
 
 public class Main {

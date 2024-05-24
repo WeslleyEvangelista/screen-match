@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645e8f8a-0d9e-469c-ab15-7e31c1eaf090" name="Changes" comment="First Commit" />
+    <list default="true" id="645e8f8a-0d9e-469c-ab15-7e31c1eaf090" name="Changes" comment="Second Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/main/MainWithSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/main/MainWithSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/models/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/models/Title.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,26 +19,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "WeslleyEvangelista"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;WeslleyEvangelista&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/WeslleyEvangelista/screen-match.git",
-    "accountId": "a6b48f43-826a-4cff-b152-c8b7e78521e0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/WeslleyEvangelista/screen-match.git&quot;,
+    &quot;accountId&quot;: &quot;a6b48f43-826a-4cff-b152-c8b7e78521e0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -53,7 +58,7 @@
     "ignore.preview.features.used": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Courses/ONE Alura - Lógica de programação/Java Backend/firstproject/screenMatch",
+    "last_opened_file_path": "C:/Courses/ONE Alura - Lógica de programação/Java Backend/firstproject/exercises3",
     "onboarding.tips.debug.path": "C:/Courses/ONE Alura - Lógica de programação/Java Backend/firstproject/screenMatch/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -61,6 +66,11 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.alura.screenmatch.exceptions" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.MainWithSearch">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.main.Main" />
@@ -120,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716232653868</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit">
+      <option name="closed" value="true" />
+      <created>1716233057582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716233057582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +154,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
 </project>

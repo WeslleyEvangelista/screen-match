@@ -1,4 +1,5 @@
 package br.com.alura.screenmatch.main;
+import br.com.alura.screenmatch.exceptions.ConversionErrorException;
 import br.com.alura.screenmatch.models.OmdbTitle;
 import br.com.alura.screenmatch.models.Title;
 import com.google.gson.FieldNamingPolicy;
@@ -17,7 +18,7 @@ public class MainWithSearch {
         System.out.println("Type the movie title you wish to search: ");
         var search = scanner.nextLine();
 
-        String url = STR."https://www.omdbapi.com/?t=\{search}&apikey=ddf8730b";
+        String url = STR."https://www.omdbapi.com/?t=\{search.replace(" ","+" )}&apikey=ddf8730b";
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -36,7 +37,18 @@ public class MainWithSearch {
         OmdbTitle omdbTitle = gson.fromJson(json, OmdbTitle.class);
         System.out.println(omdbTitle);
 
-        Title myTitle = new Title(omdbTitle);
-        System.out.println(myTitle);
+        try {
+            Title myTitle = new Title(omdbTitle);
+            System.out.println(myTitle);
+        } catch (NumberFormatException e) {
+            System.out.println(STR."""
+                    An error occurred:
+                    \{e.getMessage()}
+                    """);
+        } catch (ConversionErrorException e){
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("System ended correctly");
     }
 }

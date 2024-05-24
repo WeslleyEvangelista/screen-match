@@ -1,16 +1,14 @@
 package br.com.alura.screenmatch.models;
+import br.com.alura.screenmatch.exceptions.ConversionErrorException;
 import com.google.gson.annotations.SerializedName;
 
 public class Title implements Comparable<Title>{
-    @SerializedName("Title")
     private String name;
-    @SerializedName("Year")
     private int releaseYear;
     private boolean planIncludes;
     private double scoreSum;
     private int totalReviews;
     private int durationInMinutes;
-
 
     public Title(String name, int releaseYear) {
         this.name = name;
@@ -19,6 +17,11 @@ public class Title implements Comparable<Title>{
 
     public Title(OmdbTitle omdbTitle) {
         this.name = omdbTitle.title();
+
+        if(omdbTitle.year().length() > 4){
+            throw new ConversionErrorException("Could not convert the release Year: it have more than 4 characters");
+        }
+
         this.releaseYear = Integer.parseInt(omdbTitle.year());
         this.durationInMinutes = Integer.parseInt(omdbTitle.runtime().substring(0,2));
     }
